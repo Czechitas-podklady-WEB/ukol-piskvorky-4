@@ -1,6 +1,6 @@
 # Úkol: Piškvorky 4/5
 
-Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB/Ukol-Piskvorky-3). Tentokrát oživíš i všech zbylých 90 políček a přidáš detekci výhry.
+Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB/ukol-piskvorky-3). Tentokrát oživíš i všech zbylých 90 políček a přidáš detekci výhry.
 
 ## Zadání
 
