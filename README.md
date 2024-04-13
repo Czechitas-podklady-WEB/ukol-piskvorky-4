@@ -30,7 +30,11 @@ Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB
 
         Import výše musí být opravdu na prvním řádku tvého javascriptového souboru a v HTML souboru ti u načítání javascriptu nesmí chybět `type="module"`. Jinak načtení funkce selže.
 
-        Funkce `findWinner` očekává jeden vstupní parametr, pole řetězců `'x'` pro křížek, `'o'` pro kolečko a `'_'` pro neobsazené políčko. Zpátky po zavolání vrací, kdo vyhrál.
+        Funkce `findWinner` očekává jeden vstupní parametr, pole řetězců `'x'` pro křížek, `'o'` pro kolečko a `'_'` pro neobsazené políčko.
+        Pole tedy v sobě bude mít 100 prvků (textových řetězců vždy s jendím znakem).
+        Začíná se v levém horním políčku a postupuje se po prvním řádku doprava.
+        Na konci řádku se přeskkočí na první políčko druhého řádku (to tedy bude v poli na 11. místě, s indexem `10`), až poslední prvek pole s indexem `99` bude obsahovat políčko úplně vpravo dole.
+        Zpátky po zavolání vrací, kdo vyhrál.
 
         ### Návratové hodnoty funkce `findWinner`:
 
@@ -47,11 +51,11 @@ Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB
         const herniPole = ['_', 'o', 'x', 'x', 'o', '_', '_', 'o', '_']
         const vitez = findWinner(herniPole)
         if (vitez === 'o' || vitez === 'x') {
-        	alert(`Vyhrál hráč se symbolem ${vitez}.`) // Vyhrál hráč se symbolem o.
+        	alert(`Vyhrál hráč se symbolem ${vitez}.`) // Vyhrál hráč se symbolem 'o' nebo 'x'.
         }
         ```
 
-        To stejné herní pole pro tvůj lepší přehle lze zapsat i takto:
+        To stejné herní pole lze pro lepší přehlednost zapsat i takto:
 
         <!-- prettier-ignore -->
         ```js
