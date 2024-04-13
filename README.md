@@ -95,12 +95,16 @@ Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB
 ## Super bonus
 Funkce `findWinner`, kterou importujete, vám usnadní práci. Ale není to žádná magie, se současnými znalostmi už ji zvládnete napsat také. Takže pokud chcete, odstraňte z kódu import funkce `findWinner` a napište si ji samy!
 
-Následuje popis, jak na to. K popisu by se hodila spousta obrázků – ale ty si raději nakreslete samy, lépe vám to pomůže o problému přemýšlet. Takže si k ruce vemte čtverečkovaný papír a tužku, a směle do toho.
-
 Hodit se k tomu bude [cyklus for](https://kodim.cz/czechitas/daweb/js1/pole-data/cteni-na-doma). Obvykle je cyklus `for` na psaní zdlouhavější, než metoda `forEach` – proto obvykle dáváme přednost `forEach`. `forEach` ale neumí jednu věc – předčasné ukončení. ¨forEach` vždycky projde celé pole, ať se děje co se děje.
 Naproti tomu `for`, který máme ve funkci můžeme ukončit pomocí _předčasného návratu_ (_early return_) – když usoudíme, že pole už dál procházet nepotřebujeme, prostě pomocí `return` z funkce vyskočíme, a tím se přeruší i cyklus, který jsme měli v té funkci _rozjetý_.
 
 No a k čemu je to dobré? Jak už vás asi napadlo, vítěze budeme hledat pomocí procházení pole. A když už vítěze najdeme, je zbytečné procházet pole dál – pokud nemáme v programu chybu, vítěz je jenom jeden a nic zajímavého už v tom poli nenajdeme.
+
+Nejprve si ale připomeňme, jak vypadá hrací pole – je reprezentováno polem se 100 prvky. Indexy pole promítnuté do hrací plochy vypadají takto:
+
+![Indexy hracích políček](zadani/indexy.png)
+
+Následuje popis, jak na to. K popisu by se hodila spousta obrázků – ale ty si raději nakreslete samy (podle vzoru výše), lépe vám to pomůže o problému přemýšlet. Takže si k ruce vemte čtverečkovaný papír a tužku, a směle do toho.
 
 ### Hledání vítěze – z jednoho velkého problému udělejme čtyři menší
 Jak tedy na hledání vítěze? Vítěz je ten, kdo udělá 5 stejných symbolů za sebou – v řádku, ve sloupci, nebo diagonálně v v jednom či druhém směru. Hledat vítěze rovnou ve všech čtyřech směrech by bylo komplikované. Proto si to rozdělíme na menší úlohy.
