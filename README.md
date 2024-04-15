@@ -95,7 +95,7 @@ Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB
 ## Super bonus
 Funkce `findWinner`, kterou importujete, vám usnadní práci. Ale není to žádná magie, se současnými znalostmi už ji zvládnete napsat také. Takže pokud chcete, odstraňte z kódu import funkce `findWinner` a napište si ji samy!
 
-Hodit se k tomu bude [cyklus for](https://kodim.cz/czechitas/daweb/js1/pole-data/cteni-na-doma). Obvykle je cyklus `for` na psaní zdlouhavější, než metoda `forEach` – proto obvykle dáváme přednost `forEach`. `forEach` ale neumí jednu věc – předčasné ukončení. ¨forEach` vždycky projde celé pole, ať se děje co se děje.
+Hodit se k tomu bude [cyklus for](https://kodim.cz/czechitas/daweb/js1/pole-data/cteni-na-doma). Obvykle je cyklus `for` na psaní zdlouhavější, než metoda `forEach` – proto obvykle dáváme přednost `forEach`. `forEach` ale neumí jednu věc – předčasné ukončení. `forEach` vždycky projde celé pole, ať se děje co se děje.
 Naproti tomu `for`, který máme ve funkci můžeme ukončit pomocí _předčasného návratu_ (_early return_) – když usoudíme, že pole už dál procházet nepotřebujeme, prostě pomocí `return` z funkce vyskočíme, a tím se přeruší i cyklus, který jsme měli v té funkci _rozjetý_.
 
 No a k čemu je to dobré? Jak už vás asi napadlo, vítěze budeme hledat pomocí procházení pole. A když už vítěze najdeme, je zbytečné procházet pole dál – pokud nemáme v programu chybu, vítěz je jenom jeden a nic zajímavého už v tom poli nenajdeme.
