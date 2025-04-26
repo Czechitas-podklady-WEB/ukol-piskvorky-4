@@ -4,19 +4,7 @@ Tento úkol navazuje na [Piškvorky 3](https://github.com/Czechitas-podklady-WEB
 
 ## Zadání
 
-1.  Pokračuj v repozitáři `piskvorky` z předchozích úkolů.
-
-1.  Nastav posluchač události všem políčkům.
-
-    1.  Vyber všechna políčka pomocí `document.querySelectorAll`.
-
-    1.  Metodou `forEach` je všechny projdi a přidej jim posluchač události na kliknutí. Zařiď, aby kliknutí zavolalo funkci, kterou máš nachystanou z předchozího úkolu.
-
-    1.  Původních deset posluchačů smaž. Nejsou díky předchozímu kroku již potřeba.
-
-    1.  Oveř si, že nyní hra reaguje na kliknutí na všechna políčka.
-
-        ![všechna tlačítka oživená](zadani/vsechny.gif)
+1.  Pokračuj v repozitáři `piskvorky` z předchozích úkolů. Pokračuj v posluchači události při kliknutí na hrací políčko.
 
 1.  Po každém tahu ověř, jestli někdo nevyhrál. Využij již hotovou funkci `findWinner` od cizího autora.
 
